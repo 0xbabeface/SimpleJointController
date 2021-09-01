@@ -21,9 +21,9 @@ void SimpleJointController::Fresh(double joint_position,
 }
 
 void SimpleJointController::Update() {
-  if (iter_ == 0) {
-    CubicBezier cb(10000);
-    spline_ = cb.GetArray(current_joint_position_, 3.0);
+  if (iter_ == 0) { // iter_ is always 0, something is wrong?
+    CubicBezier cb(10000); // magic number
+    spline_ = cb.GetArray(current_joint_position_, 3.0); // magic number
   }
   double target_position = spline_[iter_];
   double target_velocity = 0.0;

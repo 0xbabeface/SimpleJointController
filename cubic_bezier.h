@@ -1,7 +1,7 @@
 
 #include <vector>
 
-using namespace std;
+using namespace std; // Don’t write using namespace at global scope in a header file.
 
 class CubicBezier {
 public:
