@@ -4,7 +4,7 @@
 class Controller {
 public:
   Controller();
-  ~Controller();
+  ~Controller(); // descontruct method need virtual
   virtual void Fresh(double joint_position, double joint_velocity) = 0;
   virtual void Update() = 0;
   virtual void GetAction(double *torque) = 0;

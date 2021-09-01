@@ -1,7 +1,7 @@
 #include <list>
-using namespace std;
+using namespace std;  // Don’t write using namespace at global scope in a header file.
 
-class AverageFilter {
+class AverageFilter{
 public:
   AverageFilter();
   double Filter(double value);
